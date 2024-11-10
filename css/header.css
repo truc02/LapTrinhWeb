@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 100px;
+    font-size: 20px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.imageLogo {
+    flex: 0 0 auto;
+}
+
+.imageLogo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các nút */
+}
+
+/* Style chung cho các nút */
+.menu .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Style cho nút mua vé */
+.btn-muave {
+    background-color: #e68414;
+    color: white; /* Đổi màu chữ thành trắng để dễ đọc hơn */
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+.btn-muave:hover {
+    background-color: #ff5500;
+    transform: translateY(-2px);
+}
+
+/* Style cho các nút menu thường */
+.btn-phim,
+.btn-gocdienanh,
+.btn-sukien,
+.btn-rap {
+    background-color: transparent;
+    color: #333;
+}
+
+.btn-phim:hover,
+.btn-gocdienanh:hover,
+.btn-sukien:hover,
+.btn-rap:hover {
+    background-color: #f0f0f0;
+    color: #e68414;
+}
+
+/* Style cho nút đăng nhập */
+.btn-log {
+    background-color: #e68414;
+    color: white;
+    padding: 10px 25px;
+    margin-left: auto; /* Đẩy nút login sang phải */
+}
+
+.btn-log:hover {
+    background-color: #ff5500;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .header {
+        padding: 20px 30px;
+    }
+    
+    .menu {
+        gap: 10px;
+    }
+    
+    .menu .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .imageLogo {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-log {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+    
