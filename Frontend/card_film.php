@@ -8,7 +8,8 @@
     <!-- Movie Cards -->
     <div class="row">
         <!-- Movie Card 1 -->
-        <?php include('../connectDB/connectDB.php');
+        <?php 
+        include('../connectDB/connectDB.php');
         $sql = 'SELECT * FROM film';
         $result = $conn->query($sql);
         $films = array();
@@ -18,8 +19,9 @@
                $films[] = $row;
             }
         }
-
+        
         foreach ($films as $film) {
+            $film_id = $film['film_id'];
             ?>
             <div class="col-md-3 col-sm-6">
                 <div class="card movie-card">
@@ -33,19 +35,29 @@
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>                               
                                 <span class="ms-2">4.0/5.0</span>
                             </div>
                         </div>
-                        <button class="btn btn-watch w-100" id="Order" onclick="window.location.href='Table_Order.html'">
-                            <i class="fas fa-play me-2"></i>Đặt vé
-                        </button>
+                        <!-- <form action="Order_Table.php" method="get">
+                            <input type="hidden" name="film_id" value="<?php echo htmlspecialchars($film['film_id']); ?>">
+                            <button class="btn btn-watch w-100" type="submit">
+                                <i class="fas fa-play me-2"></i>Đặt vé
+                            </button>
+                        </form> -->
+                        
+                        <form action="Order_Table.php" method="get">
+                            <input type="hidden"  name="film_id" id="film_id" value="<?php echo htmlspecialchars($film['film_id']); ?>" required>
+                            <button class="btn btn-watch w-100" type="submit">
+                                <i class="fas fa-play me-2"></i>Đặt vé
+                            </button>
+                        </form>
+
                     </div>
                 </div>
             </div>
             <?php
         }
-    
         ?>
     </div>
 </div>

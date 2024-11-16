@@ -9,7 +9,6 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/login.css">
-
 </head>
 <body>
   <div class="container py-5">
@@ -17,16 +16,16 @@
           <div class="col-md-6">
               <div class="card shadow-sm">
                   <div class="card-body p-5">
-                      <form>
-                          <!-- Email input -->
+                      <form action="../php/login.php" method="post"> 
+                          <!-- Username input -->
                           <div class="form-outline mb-4">
-                              <input type="username" id="form2Example1" class="form-control" placeholder=" "/>
+                              <input type="text" id="form2Example1" class="form-control" placeholder=" " name="username" required />
                               <label class="form-label" for="form2Example1">Tên đăng nhập</label>
                           </div>
 
                           <!-- Password input -->
                           <div class="form-outline mb-4">
-                              <input type="password" id="form2Example2" class="form-control" placeholder=" "/>
+                              <input type="password" id="form2Example2" class="form-control" placeholder=" " name="password" required />
                               <label class="form-label" for="form2Example2">Mật khẩu</label>
                           </div>
 
@@ -45,7 +44,7 @@
                           </div>
 
                           <!-- Submit button -->
-                          <button type="button" class="btn btn-primary btn-block mb-4">Đăng nhập</button>
+                          <button type="submit" class="btn btn-primary btn-block mb-4">Đăng nhập</button> 
 
                           <!-- Register buttons -->
                           <div class="text-center">
@@ -73,7 +72,6 @@
       </div>
   </div>
 
-  
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

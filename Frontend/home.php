@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../css/banner.css">
     <link rel="stylesheet" href="../css/card_film.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
-<body>
     <!-- header -->
     <header>
         <?php 
@@ -39,21 +39,34 @@
                 </div>';
             }
         ?>
+    </section>
 
     <!-- card_film -->
-    </section>
+    <section>
         <?php 
             $card_film = 'card_film.php';
             if (file_exists($card_film)) {
                 include($card_film);
             } else {
                 echo '<div class="container">
-                    <p class="text-center">Banner content not found.</p>
+                    <p class="text-center">Card film not found.</p>
                 </div>';
             }
         ?>
-    <section>
+    </section>
 
+    <!-- footer -->
+    <section>
+    <?php 
+            $footer = 'footer.html';
+            if (file_exists($footer)) {
+                include($footer);
+            } else {
+                echo '<div class="container">
+                    <p class="text-center">Footer not found.</p>
+                </div>';
+            }
+        ?>
     </section>
 </body>
 </html>

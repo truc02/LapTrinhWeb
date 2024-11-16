@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute query and check for successx`
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        echo '<script>window.location.href = "../Frontend/login.php";</script>';
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

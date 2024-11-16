@@ -1,6 +1,6 @@
 <div class="header">
     <div class="imageLogo">
-        <img src="../images/logo_lovisong.png" alt="Logo Website">
+        <a href="#"><img src="https://sv.ut.edu.vn/Content/AConfig/images/sv_logo_dashboard.png" alt="Logo Website"></a>
     </div>
 
     <div class="menu">
