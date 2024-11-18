@@ -8,6 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- boxi con -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
@@ -17,16 +20,19 @@
               <div class="card shadow-sm">
                   <div class="card-body p-5">
                       <form action="../php/login.php" method="post"> 
+                        <h1 class="titlle1">Đăng Nhập</h1>
                           <!-- Username input -->
                           <div class="form-outline mb-4">
-                              <input type="text" id="form2Example1" class="form-control" placeholder=" " name="username" required />
-                              <label class="form-label" for="form2Example1">Tên đăng nhập</label>
+                            <i class='bx bxs-user'></i>  
+                            <input type="text" id="form2Example1" class="form-control" placeholder=" " name="username" required />
+                            <label class="form-label" for="form2Example1">Tên đăng nhập</label>
                           </div>
 
                           <!-- Password input -->
                           <div class="form-outline mb-4">
-                              <input type="password" id="form2Example2" class="form-control" placeholder=" " name="password" required />
-                              <label class="form-label" for="form2Example2">Mật khẩu</label>
+                            <i class='bx bxs-lock-alt'></i> 
+                            <input type="password" id="form2Example2" class="form-control" placeholder=" " name="password" required />
+                            <label class="form-label" for="form2Example2">Mật khẩu</label>                                                 
                           </div>
 
                           <!-- Remember me & Forgot password -->

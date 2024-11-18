@@ -28,15 +28,18 @@
                     <span class="category-badge"><?php echo htmlspecialchars($film['title']); ?></span>
                     <img src="../images/<?php echo htmlspecialchars($film['image']); ?>" class="card-img-top" alt="Tên phim">
                     <div class="card-body">
-                        <h5 class="movie-title"><?php echo htmlspecialchars($film['name']); ?></h5>
+                        <h5 class="movie-title"><?php echo htmlspecialchars($film['name']); ?>.</h5>
+                        <h2 class="movie-time">Thời gian: <?php echo htmlspecialchars($film['time']); ?>/Phút.</h2>
                         <div class="movie-info mb-2">
                             <div class="rating">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>                               
-                                <span class="ms-2">4.0/5.0</span>
+                                <span>Đánh giá:</span>  
+                                <span class="ms-2">4.0/5.0</span>  
+                                <i class="fas fa-star text-warning">★</i>
+                                <i class="fas fa-star text-warning">★</i>
+                                <i class="fas fa-star text-warning">★</i>
+                                <i class="fas fa-star text-warning">★</i>
+                                <i class="far fa-star text-warning">★</i>                               
+                                
                             </div>
                         </div>
                         <!-- <form action="Order_Table.php" method="get">
