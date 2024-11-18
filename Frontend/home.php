@@ -6,7 +6,7 @@
     <title>LapTrinhWeb</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/banner.css">
+    <!-- <link rel="stylesheet" href="../css/banner.css"> -->
     <link rel="stylesheet" href="../css/card_film.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/footer.css">
