@@ -29,6 +29,10 @@
     margin: 10px 0;
     font-weight: bold;
 }
+.movie-time {
+    font-size:0.8rem;
+    color: red;
+}
 
 .btn-watch {
     background-color: #e71a0f;
@@ -149,3 +153,7 @@
     height: 500px;
     object-fit: cover;
 }
+
+
+
+
