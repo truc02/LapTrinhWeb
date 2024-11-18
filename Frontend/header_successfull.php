@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("../connectDB/connectDB.php");
 $sql = "SELECT * FROM user";
 $result = $conn->query($sql);

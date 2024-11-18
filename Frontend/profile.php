@@ -32,8 +32,7 @@
         ?>
     </header>
     <div class="container">
-        <?php
-            session_start(); 
+        <?php 
             include("../connectDB/connectDB.php");
 
             if (!isset($_SESSION["username"])) {
@@ -63,8 +62,7 @@
                     echo "<div class='alert alert-danger'>Lỗi: " . $conn->error . "</div>";
                 }
             }
-        ?>
-    
+        ?>    
         <h1>THÔNG TIN CÁ NHÂN</h1>
         <div id="infoSection">
             <div class="info">
