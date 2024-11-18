@@ -3,7 +3,6 @@ $server = "localhost:3306";
 $user = "root";
 $password = "";
 $database = "mydatabase";
-
 // Kết nối tới cơ sở dữ liệu
 $conn = new mysqli($server, $user, $password, $database);
 

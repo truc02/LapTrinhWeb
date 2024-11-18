@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     );
 
     if ($stmt->execute()) {
-        echo "<script>alert('Thêm phim thành công!'); window.location.href='../Frontend/home.php';</script>";
+        echo "<script>alert('Thêm phim thành công!'); window.location.href='list_film.php';</script>";
     } else {
         echo "<script>alert('Có lỗi xảy ra: " . $stmt->error . "');</script>";
     }
