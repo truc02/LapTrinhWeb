@@ -42,14 +42,14 @@
     </section>
 
     <!-- card_film -->
-    <section>
+    <section id="films-section">
         <?php 
             $card_film = 'card_film.php';
             if (file_exists($card_film)) {
                 include($card_film);
             } else {
                 echo '<div class="container">
-                    <p class="text-center">Banner content not found.</p>
+                    <p class="text-center">Card film not found.</p>
                 </div>';
             }
         ?>

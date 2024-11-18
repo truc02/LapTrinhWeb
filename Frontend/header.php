@@ -4,7 +4,7 @@
     </div>
 
     <div class="menu">
-        <button class="btn btn-muave">Mua vé</button>
+        <button class="btn btn-muave" onclick="return scrollToFilms()">Mua vé</button>
         <button class="btn btn-phim">Phim</button>
         <button class="btn btn-gocdienanh">Góc điện ảnh</button>
         <button class="btn btn-sukien">Sự kiện</button>
@@ -16,5 +16,10 @@
 <script>
     function login() {
         return window.location.href="login.php";
+    }
+
+    function scrollToFilms() {
+        const section = document.getElementById('films-section');
+        section.scrollIntoView({ behavior: 'smooth' });
     }
 </script>

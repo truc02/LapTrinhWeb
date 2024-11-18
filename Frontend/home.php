@@ -42,7 +42,7 @@
     </section>
 
     <!-- card_film -->
-    <section>
+    <section id="films-section">
         <?php 
             $card_film = 'card_film.php';
             if (file_exists($card_film)) {
