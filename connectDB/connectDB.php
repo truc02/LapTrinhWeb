@@ -1,13 +1,8 @@
 <?php
-$server = "localhost:3307";
+$server = "localhost:3366";
 $user = "root";
 $password = "";
-<<<<<<< HEAD
-$database = "mydata";
-=======
-$database = "database_film";
->>>>>>> 4947503d8201cc11f0c0b28daa7bb41143b5c13c
-
+$database = "mydatabase";
 // Kết nối tới cơ sở dữ liệu
 $conn = new mysqli($server, $user, $password, $database);
 
