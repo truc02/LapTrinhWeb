@@ -12,6 +12,8 @@ $result = $conn->query($sql);
     <div class="menu">
         <button class="btn btn-muave" onclick="return scrollToFilms()">Mua vé</button>
         <button class="btn btn-phim" onclick="return scrollToFilms()">Phim</button>
+
+        
         <button class="btn btn-gocdienanh" onclick="return scrollToFilms()" >Góc điện ảnh</button>
         <button class="btn btn-sukien">Sự kiện</button>
         <button class="btn btn-rap" onclick="return scrollToFilms()">Rạp/Giá vé</button>

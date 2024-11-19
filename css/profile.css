@@ -67,8 +67,8 @@ h1 {
 
 .form-group {
     display: flex; /* Sử dụng Flexbox */
-    margin-bottom: 15px; /* Khoảng cách dưới mỗi trường */
     justify-content: center;
+    border: none;
 }
 
 .form-label {
