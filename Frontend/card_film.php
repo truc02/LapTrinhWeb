@@ -29,7 +29,7 @@
                     <img src="../images/<?php echo htmlspecialchars($film['image']); ?>" class="card-img-top" alt="Tên phim">
                     <div class="card-body">
                         <h5 class="movie-title"><?php echo htmlspecialchars($film['name']); ?>.</h5>
-                        <h2 class="movie-time">Thời gian: <?php echo htmlspecialchars($film['time']); ?>/Phút.</h2>
+                        <h2 class="movie-time">Thời gian: <?php echo htmlspecialchars($film['time']); ?></h2>
                         <div class="movie-info mb-2">
                             <div class="rating">
                                 <span>Đánh giá:</span>  
